@@ -18,7 +18,7 @@
     <section class="section">
         <h1 class="centered" id="headerText">JAMIE COE</h1>
         <br />
-        <img class="centered" id="headerImage" src="/imgs/jamie1.jpg" onmouseover="changeImg(this)" onmouseleave="changeImg(this)">
+        <img class="centered" id="headerImage" src="imgs/jamie1.jpg" onmouseover="changeImg(this)" onmouseleave="changeImg(this)">
         <br />
         <nav>
             <div class="centered navMenu">
@@ -88,7 +88,7 @@
 
     <script>
         function changeImg(element) {
-            const imgArray = ['/imgs/jamie1.jpg', '/imgs/jamie2.jpg', '/imgs/jamie3.jpg', '/imgs/jamie4.jpg', '/imgs/jamie5.jpg', '/imgs/jamie6.jpg', '/imgs/jamie7.jpg', '/imgs/jamie8.jpg'].filter(function(value) {
+            const imgArray = ['imgs/jamie1.jpg', 'imgs/jamie2.jpg', 'imgs/jamie3.jpg', 'imgs/jamie4.jpg', 'imgs/jamie5.jpg', 'imgs/jamie6.jpg', 'imgs/jamie7.jpg', 'imgs/jamie8.jpg'].filter(function(value) {
                 return value !== element.getAttribute('src');
             });
             const randomIndex = Math.floor(Math.random() * imgArray.length);

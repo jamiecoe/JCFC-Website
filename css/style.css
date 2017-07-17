@@ -135,6 +135,7 @@ div.navMenu {
   color: white;
   text-decoration: none;
   opacity: 1;
+  cursor: pointer;
 }
 
 .textLH a {

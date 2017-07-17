@@ -1,24 +1,17 @@
-body, html, h1, h2, a {
-    margin: 0;
+@font-face {
+  font-family: 'Monaco';
+  src: url("../fonts/monaco.ttf");
 }
 
 body {
-    font-family: Helvetica, sans-serif;
-    color: #0B2370;
+  font-family: 'Monaco', Courier New, monospace;
+  background-color: black;
+  color: white;
 }
 
-section {
-    display: block;
-    /*height: 100vh;*/
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover{
-  text-decoration: line-through;
+mark {
+  background-color: yellow;
+  color: black;
 }
 
 ul {
@@ -28,7 +21,66 @@ ul {
 
 li {
   display: inline-block;
-  padding-right: 10px;
+  padding: 0 3%;
+}
+
+footer {
+  padding-bottom: 3%;
+}
+
+.social {
+  opacity: 1;
+  color: white;
+}
+
+.social:hover {
+  opacity: 0.7;
+}
+
+.section {
+  padding: 2em 0;
+}
+
+.textSection {
+  font-size: 3vmin;
+  padding: 0 5em;
+}
+
+.centered {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.border {
+  border-style: solid;
+  border-color: white;
+  border-width: medium;
+}
+
+.newProject {
+  padding-bottom: 8%;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
 }
 
 .embed-responsive {
@@ -36,7 +88,7 @@ li {
     display: block;
     height: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .embed-responsive iframe {
@@ -46,68 +98,95 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0;
 }
 
 .embed-responsive-16by9 {
     padding-bottom: 56.25%;
 }
 
-.social {
+.iframeLH {
+  width: 100%;
+  float: left;
+  padding-bottom: 3%;
+}
+
+.iframeRH {
+  width: 100%;
+  float: left;
+}
+
+.textLH {
+  width: 100%;
+  float: left;
+  /*font-size: 2.5vmin;*/
+}
+
+.textRH {
+  width: 100%;
+  float: left;
+  /*font-size: 2.5vmin;*/
+}
+
+div.navMenu {
+  font-size: 5vmin;
+}
+
+.navMenu a {
+  color: white;
+  text-decoration: none;
   opacity: 1;
 }
 
-.social:hover {
-  opacity: 0.7;
+.textLH a {
+  color: white;
 }
 
-.redBG {
-    background-image: url(../img/redBG.jpeg);
+.introText a {
+  color: blue;
+  text-decoration: none;
 }
 
-.brownBG {
-    background-image: url(../img/brownBG.jpeg);
+.newProject {
+  padding-bottom: 10%;
 }
 
-.centered {
-  text-align: center;
-  margin: 0 10%;
-}
-
-.section-space {
-  padding: 6% 0;
-}
-
-.about-section {
-  padding: 6% 10%;
-}
-
-.mainText {
-  line-height: 150%;
-  font-size: 3vmin;
-}
-
-.section-heading {
-  padding-bottom: 8%;
+.navMenu a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.6;
 }
 
 #headerImage {
-    display: block;
-    width: 35%;
-    margin: auto;
+  width: 50%;
 }
 
 #headerText {
-  font-size: 15vmin;
-  padding-top: 50px;
+  font-size: 10vmin;
 }
 
-#sub-headerText {
-  font-size: 5vmin;
-  padding-bottom: 50px;
+@media (min-width: 768px) {
+  #headerImage {
+    width: 35%;
+  }
+
 }
 
-#navBar {
-  font-size: 8vmin;
-  padding: 50px 0px;
+@media (min-width: 992px) {
+  .iframeLH {
+    width: 60%;
+  }
+
+  .iframeRH {
+    width: 60%;
+  }
+
+  .textLH {
+    width: 35%;
+    margin-left: 5%;
+  }
+
+  .textRH {
+    width: 35%;
+  }
+
 }

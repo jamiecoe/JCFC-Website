@@ -5,82 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Maya Yianni - Musician</title>
+    <title>Jamie Coe - Musician/Programmer</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="imgs/favicon.ico">
 
 </head>
 
 <body>
 
-    <section class="redBG">
-        <div class="centered">
-            <h1 id="headerText">MAYA YIANNI</h1>
-            <h2 id="sub-headerText">Musician</h2>
+    <section class="section">
+        <h1 class="centered" id="headerText">JAMIE COE</h1>
+        <br />
+        <img class="centered" id="headerImage" src="/imgs/jamie1.jpg" onmouseover="changeImg(this)" onmouseleave="changeImg(this)">
+        <br />
+        <nav>
+            <div class="centered navMenu">
+                <a onclick="scrollToSection('person')">Person</a> /
+                <a onclick="scrollToSection('projects')">Projects</a>
+            </div>
+        </nav>
+        <br />
+    </section>
 
-            <img id="headerImage" src="img/maya.jpeg" alt="Maya profile picture" onmouseover="hover(this);" onmouseout="unhover(this);" />
-            <nav id="navBar">
-
-                <a href="#watch">Watch</a>&nbsp;&nbsp;|&nbsp;
-                <a href="#listen">Listen</a>&nbsp;&nbsp;|&nbsp;
-                <a href="#about">About</a>
-
-            </nav>
-        </div>
+    <section class="section textSection introText" id="person">
+        <h1>Hello!</h1>
+        <p>
+            <mark>My name's Jamie, I'm an aspiring web developer and musician living in London. I first got into coding when I made an EP of interactive music as a <a href="https://vimeo.com/126363577" target="_blank">mini computer game</a>. A friend helped me build it, but I loved the process and decided I wanted to learn to code. I’ve been training in HTML, CSS and Javascript for the past year, mostly through online courses / tutorials and my own projects. I’m inspired by interactive music apps and software such as Björk’s <a href="https://www.youtube.com/watch?v=dikvJM__zA4" target="_blank">Biophilia</a>, and Rebecca Fiebrink's <a href="http://www.wekinator.org/" target="_blank">Wekinator</a>.</mark>
+        </p>
+        <br />
+        <br />
 
     </section>
 
-    <section class="brownBG" id="watch">
-        <div class="centered section-space mainText">
-            <h1 class="section-heading">Watch <em>It Happened</em> &ndash; Live at Goldsmiths Music Studios</h1>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://player.vimeo.com/video/188408207?title=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <section class="section textSection" id="projects">
+
+        <h1 class="centered">Projects</h1>
+        <br />
+        <br />
+        <div class="newProject clearfix">
+            <div class="iframeLH">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="border" src="https://player.vimeo.com/video/182080867" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="textLH">
+                <p>
+                    <mark>In Concert</mark> is a web application for an experimental music collaboration project, inspired by open-source principles. Musicians and non-musicians openly share ideas and source materials. Creativity does not exist in a vacuum.
+                    This project was built with <a href="https://p5js.org/" target="_blank">p5.js</a> and simple Node.js.
+                </p>
             </div>
         </div>
-    </section>
 
-    <section class="redBG" id="listen">
-        <div class="centered section-space mainText">
-            <h1 class="section-heading">Listen to new EP &ndash; <em>One In Two In Four</em></h1>            
-            <iframe width="60%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/307047527&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <div class="newProject clearfix">
+            <div class="iframeLH">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="border" style="overflow: hidden;" src="https://jamiecoe.github.io/StepMusicJS/"></iframe>
+                </div>
+            </div>
+            <div class="textLH">
+                <p>
+                    <mark>Step Music JS</mark> is an interactive music composition, which slowely moves through the minor pentatonic scale <a href="https://en.wikipedia.org/wiki/Circle_of_fifths" target="_blank">Circle of 5ths</a>. The user performs the
+                    piece by clicking on the screen to trigger a random note in the current scale, and a colour change signifies the scale has modulated. The piece move round in a circle infinitely. This project was built with <a href="https://p5js.org/"
+                        target="_blank">p5.js</a>.
+                </p>
+            </div>
         </div>
+
     </section>
 
-    <section class="brownBG" id="about">
-        <div class="about-section mainText">
-            <h1>About</h1>
-            <p><strong>Maya Yianni</strong> creates a sound of nostalgia and familiarity through her music. Her voice nods towards the late, great jazz singers that inspired her from a young age, but still sounds contemporary, with influences panning from
-                Riot Grrl, Noise, 60's Pop and beyond. Her approach to songwriting is unapologetically auto-biographical and frank, and she writes to magnify both the menial and meaningful moments of her life. Yianni has a DIY approach to her work, which
-                might not be immediately apparent when you listen to it.<br /><br /> These working ways were mainly developed whilst studying at Goldsmiths, London, where Yianni also realised the power of deliberately minimising the creative decisions
-                that appear when creating music. She rarely works with electronics because of this and tends to stick to organic means of songwriting to reduce her distractions. Yianni also sites collaboration with other musicians, artists, and friends,
-                as a crucial part of her artistry. Yianni lives in South East London.</p>
-            <br />
-            <ul>
-                <li><a class="social" href="https://www.facebook.com/maya.yianni" target="_blank"><span class="fa fa-facebook fa-lg"></span></a></li>
-                <li><a class="social" href="https://twitter.com/mayayianni" target="_blank"><span class="fa fa-twitter fa-lg"></span></a></li>
-                <li><a class="social" href="https://www.instagram.com/mayayianni/" target="_blank"><span class="fa fa-instagram fa-lg"></span></a></li>
-                <li><a class="social" href="https://soundcloud.com/maya-yianni" target="_blank"><span class="fa fa-soundcloud fa-lg"></span></a></li>
-                <li><a class="social" href="https://maya-yianni.bandcamp.com/album/one-in-two-in-four" target="_blank"><span class="fa fa-bandcamp fa-lg"></span></a></li>
-                <li><a class="social" href="https://www.youtube.com/user/mayayianni" target="_blank"><span class="fa fa-youtube fa-lg"></span></a></li>
-            </ul>
 
 
-        </div>
-    </section>
+    <footer>
+        <ul class="centered">
+            <li><a class="social" href="https://github.com/jamiecoe" target="_blank"><span class="fa fa-github fa-lg"></span></a></li>
+            <li><a class="social" href="https://www.facebook.com/jamiecoemusic/" target="_blank"><span class="fa fa-facebook fa-lg"></span></a></li>
+            <li><a class="social" href="https://twitter.com/jamiecoemusic" target="_blank"><span class="fa fa-twitter fa-lg"></span></a></li>
+            <li><a class="social" href="https://soundcloud.com/jamie_coe" target="_blank"><span class="fa fa-soundcloud fa-lg"></span></a></li>
+        </ul>
+    </footer>
 
     <script>
-        function hover(element) {
-            element.setAttribute('src', 'img/maya2.jpg');
+        function changeImg(element) {
+            const imgArray = ['/imgs/jamie1.jpg', '/imgs/jamie2.jpg', '/imgs/jamie3.jpg', '/imgs/jamie4.jpg', '/imgs/jamie5.jpg', '/imgs/jamie6.jpg', '/imgs/jamie7.jpg', '/imgs/jamie8.jpg'].filter(function(value) {
+                return value !== element.getAttribute('src');
+            });
+            const randomIndex = Math.floor(Math.random() * imgArray.length);
+            element.setAttribute('src', imgArray[randomIndex]);
         }
 
-        function unhover(element) {
-            element.setAttribute('src', 'img/maya.jpeg');
+        function scrollToSection(id) {
+
+            var i = window.pageYOffset;
+            var int = setInterval(function() {
+                window.scrollTo(0, i);
+                i += 30;
+                if (i >= findPos(document.getElementById(id))) clearInterval(int);
+            }, 20);
+
+            function findPos(obj) {
+                var curtop = 0;
+                if (obj.offsetParent) {
+                    do {
+                        curtop += obj.offsetTop;
+                    } while (obj = obj.offsetParent);
+                    return [curtop];
+                }
+            }
         }
     </script>
 
 </body>
+
 
 
 </html>

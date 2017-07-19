@@ -159,6 +159,9 @@ div.navMenu {
 
 #headerImage {
   width: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: medium;
 }
 
 #headerText {

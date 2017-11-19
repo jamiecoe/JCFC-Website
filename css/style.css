@@ -28,6 +28,14 @@ footer {
   padding-bottom: 3%;
 }
 
+.popupHidden {
+  display: none;
+}
+
+.popupOpen {
+  display: block;
+}
+
 .social {
   opacity: 1;
   color: white;

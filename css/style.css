@@ -6,199 +6,294 @@
 body {
   font-family: 'Monaco', Courier New, monospace;
   background-color: black;
-  color: white;
+  color: #F9F9F6;
+  margin: 0;
 }
 
-mark {
-  background-color: yellow;
-  color: black;
+header {
+  margin-top: 55px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 500px;
+  text-align: center;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+section {
+  padding: 50px 10%;
 }
 
-li {
-  display: inline-block;
-  padding: 0 3%;
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #F9F9F6;
+}
+
+th {
+  border-bottom: 1px solid #F9F9F6;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+th:not(:last-child), td:not(:last-child) {
+  border-right: 1px solid #F9F9F6;
 }
 
 footer {
-  padding-bottom: 3%;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.75rem;
 }
 
-.popupHidden {
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #F9F9F6;
+}
+
+.navbar .icon {
   display: none;
 }
 
-.popupOpen {
-  display: block;
+.home-logo {
+  margin: 20px auto 20px 20px;
+  padding: 5px;
+  border: solid 2px #F9F9F6;
+  border-radius: 100%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.social {
-  opacity: 1;
-  color: white;
+.home-logo:hover {
+  background: #F9F9F6;
+  color: black;
 }
 
-.social:hover {
-  opacity: 0.7;
+.navbar-link {
+  padding: 25px 20px 10px 20px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-.section {
-  padding: 2em 0;
+.navbar-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background-color: #F9F9F6;
+  left: 0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.textSection {
-  font-size: 3vmin;
-  padding: 0 5em;
+.navbar-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-.centered {
-  text-align: center;
+.projects, .contact {
+  background: #F9F9F6;
+  color: black;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+
+.a {
+  color: #5CC8FF;
+
+}
+
+.project-container a:visited {
+  color: #5CC8FF;
+}
+
+.project-img {
   display: block;
   margin: auto;
+  width: 100%;
 }
 
-.border {
-  border-style: solid;
-  border-color: white;
-  border-width: medium;
+.link {
+  color: #5CC8FF;
 }
 
-.newProject {
-  padding-bottom: 8%;
+.tool-icons {
+  display: flex;
 }
 
-.clearfix:after {
-    content: ".";
+.tool-icons img {
+  margin-right: 20px;
+  height: 50px;
+}
+
+.section-content {
+  margin: 0 75px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container p {
+  width: 75%;
+  padding-right: 40px;
+}
+
+.profile-pic {
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  border: 2px solid #F9F9F6;
+}
+
+.cv-item {
+  margin-bottom: 75px;
+}
+
+.cv-history {
+  padding: 20px;
+}
+
+.cv-logo {
+  height: 50px;
+}
+
+.cv-job-list {
+  margin-bottom: 50px;
+}
+
+.cv-mobiletechskills {
+  display: none;
+}
+
+.contact-header {
+  margin: 0 75px;
+  padding-bottom: 50px;
+}
+
+.contact-box {
+  width: 300px;;
+  margin: auto;
+  padding: 50px;
+  background: grey;
+  color: #F9F9F6;
+}
+
+.contact-box a {
+  color: #F9F9F6;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-link {
+    display: none;
+  }
+
+  .navbar .icon {
     display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
+    margin: 20px 20px 10px 20px;
+    padding: 5px;
+    font-size: 1.25rem;
+  }
 
-.clearfix {
-    display: inline-block;
-}
+  .responsive {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-html[xmlns] .clearfix {
+  .responsive .navbar-link {
     display: block;
-}
-
-* html .clearfix {
-    height: 1%;
-}
-
-.embed-responsive {
-    position: relative;
-    display: block;
-    height: 0;
-    padding: 0;
-    /*overflow: hidden;*/
-}
-
-.embed-responsive iframe {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-}
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
 
-.embed-responsive-16by9 {
-    padding-bottom: 56.25%;
-}
+  .responsive .navbar-link::before {
+    display: none;
+  }
 
-.iframeLH {
-  width: 100%;
-  float: left;
-  padding-bottom: 3%;
-}
+  .responsive .navbar-link:hover {
+    background: #F9F9F6;
+    color: #171206;
+  }
 
-.iframeRH {
-  width: 100%;
-  float: left;
-}
+  .section-content {
+    margin: 0;
+  }
 
-.textLH {
-  width: 100%;
-  float: left;
-  /*font-size: 2.5vmin;*/
-}
+  .profile-container {
+    flex-wrap: wrap;
+  }
 
-.textRH {
-  width: 100%;
-  float: left;
-  /*font-size: 2.5vmin;*/
-}
+  .profile-container p {
+    width: 100%;
+    padding-right: 0;
+  }
 
-div.navMenu {
-  font-size: 5vmin;
-}
+  table {
+    font-size: 0.75rem;
+  }
 
-.navMenu a {
-  color: white;
-  text-decoration: none;
-  opacity: 1;
-  cursor: pointer;
-}
+  th, td {
+    padding: 10px;
+  }
 
-.textLH a {
-  color: white;
-}
-
-.introText a {
-  color: blue;
-  text-decoration: none;
-}
-
-.newProject {
-  padding-bottom: 10%;
-}
-
-.navMenu a:hover {
-  color: white;
-  text-decoration: none;
-  opacity: 0.6;
-}
-
-#headerImage {
-  width: 50%;
-  border-style: solid;
-  border-color: white;
-  border-width: medium;
-}
-
-#headerText {
-  font-size: 10vmin;
-}
-
-@media (min-width: 768px) {
-  #headerImage {
-    width: 35%;
+  .contact-header {
+    margin: 0;
   }
 
 }
 
-@media (min-width: 992px) {
-  .iframeLH {
-    width: 60%;
+@media screen and (max-width: 700px) {
+
+  section {
+    padding: 50px 10px;
   }
 
-  .iframeRH {
-    width: 60%;
+  table {
+    font-size: 0.5rem;
   }
 
-  .textLH {
-    width: 35%;
-    margin-left: 5%;
+  th, td {
+    padding: 5px;
   }
 
-  .textRH {
-    width: 35%;
+  .contact-box {
+    font-size: 0.75rem;
+    width: 200px;
   }
 
+  .cv-table {
+    display: none;
+  }
+
+  .cv-mobiletechskills {
+    display: block;
+  }
 }

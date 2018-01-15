@@ -4,100 +4,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamie Coe - Full Stack Web Developer</title>
 
-  <title>Jamie Coe - Musician/Programmer</title>
-
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />  
   <link rel="shortcut icon" href="imgs/favicon.ico">
 
 </head>
 
 <body>
 
+  <nav id="navbar" class="navbar">
+    <a href="#" class="home-logo">JC</a>
+    <a href="javascript:void(0);" class="icon" onclick="menuFunction()">&#9776;</a>
+    <a href="#projects" class="navbar-link">Projects</a>
+    <a href="#cv" class="navbar-link">CV</a>
+    <a href="#contact" class="navbar-link">Contact</a>
+    <a href="https://github.com/jamiecoe" target="_blank" class="navbar-link">Github</a>
+  </nav>
 
-  <header class="section">
-    <h1 class="centered" id="headerText">JAMIE COE</h1>
-    <br />
+  <header>
+    <h1>Jamie Coe</h1>
+    <h2>Full&dash;Stack Web Developer</h2>
+    <p id="projects"></p>
   </header>
 
+  <section class="projects">
+      <div class="section-content">
+        <h2>Projects</h2>
+        <div class="project-container">
+          <h3><a href="https://github.com/fac-12/peppr" target="_blank">Peppr</a> (<em>in production</em>)</h3>
+          <a href="https://github.com/fac-12/peppr" target="_blank"><img class="project-img" src="imgs/peppr.png" alt="peppr screen shot"></a>
+          <p>Peppr is a web application for saving online recipes. The project was built by a team of 4 developers across 3 weeks. This time consisted of a design week and a 2&dash;week build sprint, with hands&dash;on experience on Design&dash;Thinking and Agile software development techniques.<br /><br />
+          App features include user authentication, url-scraping and saving recipes to your personal profile.
+          </p>
+          <h4>Built with:</h4>
+          <div class="tool-icons">
+            <img src="imgs/react.png" alt="React logo" title="React">
+            <img src="imgs/redux.png" alt="Redux logo" title="Redux">
+            <img src="imgs/node.png" alt="Node JS logo" title="Node JS">
+            <img src="imgs/postgresql.svg" alt="PostgreSQL logo" title="PostgreSQL">
+          </div>
+        </div>
+        <div class="project-container">
+          <h3><a href="https://jamiecoe.github.io/StepMusicJS/" target="_blank" class="link">Step Music JS</a></h3>
+          <a href="https://jamiecoe.github.io/StepMusicJS/" target="_blank"><img class="project-img" src="imgs/stepmusic.png" alt="Step music screen shot"></a>
+          <p>Step Music is an interactive audio/visual display, built around a piece of minimal music. Each user click picks a random note from a 5 note scale. Every 10 click, the scale modulates and the colour changes. Each new scale contains only 1 new note, and after 12 modulations it returns back to the original scale. In this way, the music changes slowly and in a circular motion.</p>
+          <h4>Built with:</h4>
+          <div class="tool-icons">
+            <img src="imgs/p5js.svg" alt="p5 js logo" title="p5.js">
+          </div>
+        </div>
+      </div>
+      <p id="cv"></p>
+  </section>
 
-  <img class="centered" id="headerImage" src="imgs/jamie1.jpg" alt="Random image of me">
-  <br />
+  <section class="cv">
+    <div class="section-content">
+      <h2>CV</h2>
+      <h3>Profile:</h3>
+      <div class="profile-container cv-item">
+        <p>I'm a full&dash;stack web developer based in London, with a background in music. I strive for clean, robust and testable code with simple and accessible design. My previous work as a client manager means I highly value communication and user-empathy.</p>
+        <img src="imgs/jamie-profile.jpg" alt="Jamie Coe profile picture" class="profile-pic">
+      </div>
 
-  <nav>
-    <div class="centered navMenu">
-      <a onclick="scrollToSection('person')">Person</a> /
-      <a onclick="scrollToSection('projects')">Projects</a>
+      <h3>Technical Skills:</h3>
+      <table class="cv-table cv-item">
+        <tr>
+          <th>Languages</th>
+          <th>Frameworks / Libraries</th>
+          <th>Databases</th>
+          <th>Testing</th>
+          <th>Design</th>
+          <th>Other tools</th>
+        </tr>
+        <tr>
+          <td>Javascript</td>
+          <td>Node.js</td>
+          <td>PostgreSQL</td>
+          <td>Tape</td>
+          <td>Figma</td>
+          <td>Git &amp; Github</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Express.js</td>
+          <td></td>
+          <td>Shot</td>
+          <td>Invision</td>
+          <td>Heroku</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>React</td>
+          <td></td>
+          <td>Travis CI</td>
+          <td>Photoshop</td>
+          <td>Agile</td>
+        </tr>
+        <tr>
+          <td>Java (Processing)</td>
+          <td>Redux</td>
+          <td></td>
+          <td>Istanbul</td>
+          <td>Illustrator</td>
+          <td>Design Thinking</td>
+        </tr>
+        <tr>
+          <td>C++ (Open&dash;Frameworks)</td>
+          <td>Handlebars</td>
+          <td></td>
+          <td>Codecov</td>
+          <td></td>
+          <td>User Research</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>p5.js</td>
+          <td></td>
+          <td>Supertest</td>
+          <td></td>
+          <td>User Testing</td>
+        </tr>
+      </table>
+
+      <div class="cv-item cv-mobiletechskills">
+        <p>Languages</p>
+        <ul>
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java (Processing)</li>
+          <li>C++ (Open&dash;Frameworks)</li>
+        </ul>
+        <p>Frameworks / Libraries</p>
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Handlebars</li>
+          <li>p5.js</li>
+        </ul>
+        <p>Databases</p>
+        <ul>
+          <li>PostgreSQL</li>
+        </ul>
+        <p>Testing</p>
+        <ul>
+          <li>Tape</li>
+          <li>Shot</li>
+          <li>Travis CI</li>
+          <li>Istanbul</li>
+          <li>Codecov</li>
+          <li>Supertest</li>
+          <li>Jest</li>
+        </ul>
+        <p>Design</p>
+        <ul>
+          <li>Figma</li>
+          <li>Invision</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+        </ul>
+        <p>Other tools</p>
+        <ul>
+          <li>Git &amp; Github</li>
+          <li>Heroku</li>
+          <li>Agile</li>
+          <li>Design Thinking</li>
+          <li>User Research</li>
+          <li>User Testing</li>
+        </ul>
+      </div>
+
+      <h3>Relevant Employment and Education:</h3>
+      <div class="cv-history cv-item">
+        <img src="imgs/f&c-logo.png" alt="Founders and coders logo" class="cv-logo">
+        <h4>Founders &amp; Coders,<br />
+        Student <em>Oct 2017 &dash; Feb 2018</em>
+        </h4>
+        <p>Founder and Coders is UK-based nonprofit organization that runs a highly selective sixteen week tuition-free coding academy in London. The course includes:</p>
+        <ul class="cv-job-list">
+          <li>Tuition, workshops and projects using full-stack Javascript (Vanilla JS, React, Node, Express, PostgreSQL).</li>
+          <li>Emphasis on learning and understanding JS fundamentals.</li>
+          <li>Topics such as: Git &amp; Version Control / Accessibility / TDD / Security & Encryption.</li>
+          <li>Emphasis on pair programming and team based projects.</li>
+          <li>Final projects collaborating with charities and NGOs, using Design Thinking and Agile techniques to build a 3 week prototype.</li>
+        </ul>
+        <img src="imgs/tido-logo.png" alt="Tido logo" class="cv-logo">
+        <h4>Tido Music Ltd,<br />
+        Client Manager <em>Sept 2016 &dash; Oct 2017</em></h4>
+        <p>Tido is a UK music&dash;tech startup, specialising in interactive and immersive sheet music apps for Web and iOS. Duties included:</p>
+        <ul class="cv-job-list">
+          <li>Act as an intermediary between clients (B2B and B2C) and the Tido team, creating a centralised point for all communications.</li>
+          <li>Represent the voice of the client in Tido, anticipating and voicing concerns on their behalf to the broader Tido team.</li>
+          <li>Manage the onboarding process of all new clients, setting up robust and efficient work processes & communications.</li>
+          <li>Have a working knowledge of all areas of the Tido team in order to funnel/direct questions to & from clients.</li>
+          <li>Prepare and maintain instructional documents (eg: FAQs, Product/Content specifications) as a helpful guide for clients.</li>
+        </ul>
+        <img src="imgs/goldsmiths-logo.png" alt="Goldsmiths logo" class="cv-logo">
+        <h4>MA Computation Arts at Goldsmiths,<br />
+        Passed with Distinction <em>Sept 2015 &dash; Sept 2016</em></h4>
+        <ul class="cv-job-list">
+          <li>Workshops in Creative Coding, using Processing (Java) / Open&dash;Frameworks (C++) / p5.js.</li>
+          <li>Physical Computing, using Arduino and Raspberry Pi.</li>
+        </ul>
+        <p></p>
+      </div>
     </div>
-  </nav>
-  <br />
-
-  <section class="section textSection introText" id="person">
-    <h1>Hello!</h1>
-    <p>
-      <mark>My name's Jamie, I'm an aspiring web developer and musician living in London. I first got into coding when I made an EP of interactive music as a <a href="https://vimeo.com/126363577" target="_blank">mini computer game</a>. A friend helped me build it, but I loved the process and decided I wanted to learn to code. I’ve been training in HTML, CSS and Javascript for the past year, mostly through online courses / tutorials and my own projects. I’m inspired by interactive music apps and software such as Björk’s <a href="https://www.youtube.com/watch?v=dikvJM__zA4" target="_blank">Biophilia</a>, and Rebecca Fiebrink's <a href="http://www.wekinator.org/" target="_blank">Wekinator</a>.</mark>
-    </p>
-    <br />
-    <br />
 
   </section>
 
-  <section class="section textSection" id="projects">
-
-    <h1 class="centered">Projects</h1>
-    <br />
-    <br />
-    <div class="newProject clearfix">
-      <div class="iframeLH">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="border" src="https://player.vimeo.com/video/182080867" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="textLH">
-        <p>
-          <mark>In Concert</mark> is a web application for an experimental music collaboration project, inspired by open-source principles. Musicians and non-musicians openly share ideas and source materials. Creativity does not exist in a vacuum. This
-          project was built with <a href="https://p5js.org/" target="_blank">p5.js</a> and simple Node.js.
-        </p>
-      </div>
+  <section id="contact" class="contact">
+    <h2 class="contact-header">Contact</h2>
+    <div class="contact-box">
+      <p>Email: jamiecoe66@gmail.com</p>
+      <p>Twitter: <a href="https://twitter.com/jcdev66" target="_blank">@jcdev66</a></p>
+      <p>Github: <a href="https://github.com/jamiecoe" target="_blank">jamiecoe</a></p>
+      <p>Linkedin: <a href="https://www.linkedin.com/in/jamie-coe-8437b4b4/" target="_blank">Jamie Coe</a></p>
     </div>
-
-    <div class="newProject clearfix">
-      <div class="iframeLH">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="border" style="overflow: hidden;" src="https://jamiecoe.github.io/StepMusicJS/"></iframe>
-        </div>
-      </div>
-      <div class="textLH">
-        <p>
-          <mark>Step Music JS</mark> is an interactive music composition, which slowely moves through the minor pentatonic scale <a href="https://en.wikipedia.org/wiki/Circle_of_fifths" target="_blank">Circle of 5ths</a>. The user performs the piece by
-          clicking on the screen to trigger a random note in the current scale, and a colour change signifies the scale has modulated. The piece move round in a circle infinitely. This project was built with <a href="https://p5js.org/" target="_blank">p5.js</a>.
-        </p>
-      </div>
-    </div>
-
   </section>
-
-
 
   <footer>
-    <ul class="centered">
-      <li><a class="social" href="https://github.com/jamiecoe" target="_blank"><span class="fa fa-github fa-lg"></span></a></li>
-      <li><a class="social" href="https://www.facebook.com/jamiecoemusic/" target="_blank"><span class="fa fa-facebook fa-lg"></span></a></li>
-      <li><a class="social" href="https://twitter.com/jamiecoemusic" target="_blank"><span class="fa fa-twitter fa-lg"></span></a></li>
-      <li><a class="social" href="https://soundcloud.com/jamie_coe" target="_blank"><span class="fa fa-soundcloud fa-lg"></span></a></li>
-    </ul>
+    <p>Copyright &copy; Jamie Coe 2018</p>
   </footer>
 
   <script>
-    function changeImg(element) {
-      const imgArray = ['imgs/jamie1.jpg', 'imgs/jamie2.jpg', 'imgs/jamie3.jpg', 'imgs/jamie4.jpg', 'imgs/jamie5.jpg', 'imgs/jamie6.jpg', 'imgs/jamie7.jpg', 'imgs/jamie8.jpg'].filter(function(value) {
-        return value !== element.getAttribute('src');
-      });
-      const randomIndex = Math.floor(Math.random() * imgArray.length);
-      element.setAttribute('src', imgArray[randomIndex]);
-    }
-
     function scrollToSection(id) {
 
       var i = window.pageYOffset;
@@ -116,6 +248,12 @@
           return [curtop];
         }
       }
+    }
+
+    function menuFunction() {
+      var x = document.getElementById('navbar');
+      if(x.className === "navbar") x.className += " responsive";
+      else x.className = "navbar";
     }
 
   </script>

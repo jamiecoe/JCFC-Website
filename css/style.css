@@ -58,7 +58,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  background: black;  
+  background: black;
 }
 
 .navbar a {
@@ -135,6 +135,7 @@ footer {
   display: block;
   margin: auto;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .link {

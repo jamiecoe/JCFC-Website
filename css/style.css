@@ -192,6 +192,11 @@ footer {
   display: none;
 }
 
+.cv-pdf-link {
+  color: white;
+  font-size: .8rem;
+}
+
 .contact-header {
   margin: 0 75px;
   padding-bottom: 50px;
